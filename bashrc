@@ -50,6 +50,9 @@ alias edit='vim /home/$(whoami)/.bashrc && source /home/$(whoami)/.bashrc'
 # what's using the most memory?
 alias mem='ps -e -orss=,args= | sort -b -k1,1n | pr -TW$COLUMNS'
 
+# mute your ALSA audio
+alias mute='amixer set Master toggle'
+
 # alias for sudo /bin/su -
 alias S='sudo -i'
 #------------------------------------------------------------------------------#
